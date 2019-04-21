@@ -1,6 +1,6 @@
 # Angular Webcam Video Capture
 
-* Displays webcam video stream and captures images from local PC using a web browser. Photos can be captured using a button that will save the images in an array. Works in Chrome only.
+* Displays webcam video stream and captures images from local PC web browser. Photos can be captured using a button that will save the images in an array. Works in Chrome only.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -17,7 +17,7 @@
 
 ## General info
 
-* The captured pictures are added to a 'captures' array. This is cleared each time the app initialises as part of the ngOnInit lifecycle.
+* The captured pictures are added to a 'captures' array. This is cleared each time after the app initialises as part of the ngOnInit lifecycle hook.
 
 * The `srcObject` property of the HTMLMediaElement interface is now used to get webcam video stream due to [deprecation of "createObjectURL"](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/srcObject).
 
@@ -33,7 +33,7 @@
 
 * [Angular ViewChild](https://angular.io/api/core/ViewChild) decorator used to configure a view query.
 
-* [navigator.mediaDevices.getUserMediagetUserMedia()](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) method used to prompts the user for permission to use a media input which produces a MediaStream. It returns a Promise that resolves to a MediaStream object. A catch error function was added.
+* [navigator.mediaDevices.getUserMedia()](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) method used to prompts the user for permission to use a media input which produces a MediaStream. It returns a Promise that resolves to a MediaStream object (assuming permission is given). A catch function was added to alert the user to any errors.
 
 ## Setup
 
