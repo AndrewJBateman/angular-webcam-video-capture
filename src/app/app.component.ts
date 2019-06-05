@@ -7,10 +7,10 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-    @ViewChild("video") //variable from html
+    @ViewChild("video", {static: true}) //variable from html
     public video: ElementRef;
 
-    @ViewChild("canvas") //variable from html
+    @ViewChild("canvas", {static: true}) //variable from html
     public canvas: ElementRef;
 
     public captures: Array<any>;
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
     public ngOnInit() { }
 
     // “navigator” is an object that contains information and about the user’s browser
-    // Calling “mediaDevices” on the “navigator” object returns info about what media input 
+    // Calling “mediaDevices” on the “navigator” object returns info about what media input
     // devices are connected tot he browser.
     // view DOM elements. Get user permission first
     public ngAfterViewInit() {
@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
             this.video.nativeElement.srcObject = stream;
             this.video.nativeElement.play();
           })
-          .catch( err => 
+          .catch( err =>
             alert(`Bummer! ${err.name}.`)
           );
       }

@@ -27,7 +27,9 @@
 
 ## Technologies
 
-* [Angular v7.2.13](https://angular.io/) & [Angular CLI v7.3.8](https://cli.angular.io/).
+* [Angular v8.0.0](https://angular.io/)
+
+* [Angular CLI v8.0.1](https://cli.angular.io/).
 
 * [Angular ElementRefs](https://angular.io/api/core/ElementRef#description) used as a wrapper inside of a View. Security issues with this method and it means service workers cannot be used. Better to use templating and databinding or use Renderer2.
 
@@ -60,13 +62,13 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Features
 
-* Works with [Google Chrome Version 73.0.3683.103 Oficial Build 64 bits](https://www.google.com/chrome/).
+* Works with [Google Chrome Version 73.0.3683.103 Official Build 64 bits](https://www.google.com/chrome/).
 
-* Updated to latest Angular 7 version with all dependency conflicts resolved.
+* Updated to latest Angular 8 version with all dependency conflicts resolved.
 
 ## Status & To-Do List
 
-* Status: Simple 100% working app.
+* Status: Working.
 
 * To-Do: add an improved UI. Add database connection to store captured photos.
 
