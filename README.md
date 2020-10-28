@@ -1,10 +1,10 @@
-# Angular Webcam Video Capture
+# :zap: Angular Webcam Video Capture
 
 * Displays webcam video stream and captures images from local PC web browser. Photos can be captured using a button that will save the images in an array. Works in Chrome only.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
-## Table of contents
+## :page_facing_up: Table of contents
 
 * [General info](#general-info)
 * [Screenshots](#screenshots)
@@ -15,33 +15,28 @@
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
-## General info
+## :books: General info
 
 * The captured pictures are added to a 'captures' array. This is cleared each time after the app initialises as part of the ngOnInit lifecycle hook.
-
 * The `srcObject` property of the HTMLMediaElement interface is now used to get webcam video stream due to [deprecation of "createObjectURL"](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/srcObject).
 
-## Screenshots
+## :camera: Screenshots
 
 ![Example screenshot](./img/webcam-video-capture.png).
 
-## Technologies
+## :signal_strength: Technologies
 
-* [Angular v8.0.0](https://angular.io/)
-
-* [Angular CLI v8.0.1](https://cli.angular.io/).
-
+* [Angular v8](https://angular.io/)
+* [Angular CLI v8](https://cli.angular.io/).
 * [Angular ElementRefs](https://angular.io/api/core/ElementRef#description) used as a wrapper inside of a View. Security issues with this method and it means service workers cannot be used. Better to use templating and databinding or use Renderer2.
-
 * [Angular ViewChild](https://angular.io/api/core/ViewChild) decorator used to configure a view query.
-
 * [navigator.mediaDevices.getUserMedia()](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) method used to prompts the user for permission to use a media input which produces a MediaStream. It returns a Promise that resolves to a MediaStream object (assuming permission is given). A catch function was added to alert the user to any errors.
 
-## Setup
+## :floppy_disk: Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code Examples
+## :computer: Code Examples
 
 * Extract from `app.component.ts` showing deprecated `createObjectURL` code and working replacement code.
 
@@ -60,24 +55,21 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ```
 
-## Features
+## :cool: Features
 
 * Works with [Google Chrome Version 73.0.3683.103 Official Build 64 bits](https://www.google.com/chrome/).
-
 * Updated to latest Angular 8 version with all dependency conflicts resolved.
 
-## Status & To-Do List
+## :clipboard: Status & To-Do List
 
 * Status: Working.
-
 * To-Do: add an improved UI. Add database connection to store captured photos.
 
-## Inspiration
+## :clap: Inspiration
 
 * [Nic Raboy of X-Team blog: CAPTURE WEBCAM IMAGES FROM A BROWSER WITH ANGULAR](https://x-team.com/blog/webcam-image-capture-angular/)]
-
 * [Matt McAlister: Get You Some Media With getUserMedia()](https://medium.com/@matt.mcalister93/get-you-some-media-with-getusermedia-726cde161cd7)
 
-## Contact
+## :envelope: Contact
 
-Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
