@@ -19,6 +19,7 @@
 
 * The captured pictures are added to a 'captures' array. This is cleared each time after the app initialises as part of the ngOnInit lifecycle hook.
 * The `srcObject` property of the HTMLMediaElement interface is now used to get webcam video stream due to [deprecation of "createObjectURL"](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/srcObject).
+* This a simple app. No Jasmine/Karma testing included this time.
 
 ## :camera: Screenshots
 
@@ -45,7 +46,6 @@
     public ngAfterViewInit() {
         if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
             navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
-                // this.video.nativeElement.src = window.URL.createObjectURL(stream);
                 this.video.nativeElement.srcObject = stream;
                 this.video.nativeElement.play();
             });

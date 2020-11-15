@@ -32,7 +32,6 @@ export class AppComponent implements OnInit {
             { video: true }
           )
           .then(stream => {
-            // this.video.nativeElement.src = window.URL.createObjectURL(stream);
             this.video.nativeElement.srcObject = stream;
             this.video.nativeElement.play();
           })
