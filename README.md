@@ -26,8 +26,8 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v8](https://angular.io/)
-* [Angular CLI v8](https://cli.angular.io/).
+* [Angular v11](https://angular.io/)
+* [Angular CLI v11](https://cli.angular.io/).
 * [Angular ElementRefs](https://angular.io/api/core/ElementRef#description) used as a wrapper inside of a View. Security issues with this method and it means service workers cannot be used. Better to use templating and databinding or use Renderer2.
 * [Angular ViewChild](https://angular.io/api/core/ViewChild) decorator used to configure a view query.
 * [navigator.mediaDevices.getUserMedia()](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) method used to prompts the user for permission to use a media input which produces a MediaStream. It returns a Promise that resolves to a MediaStream object (assuming permission is given). A catch function was added to alert the user to any errors.
@@ -57,8 +57,8 @@
 
 ## :cool: Features
 
-* Works with [Google Chrome Version 73.0.3683.103 Official Build 64 bits](https://www.google.com/chrome/).
-* Updated to latest Angular 8 version with all dependency conflicts resolved.
+* Works with [Google Chrome Version 86 Official Build 64 bits](https://www.google.com/chrome/).
+* App updated to latest Angular v11 with no dependency conflicts.
 
 ## :clipboard: Status & To-Do List
 

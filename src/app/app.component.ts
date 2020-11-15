@@ -46,6 +46,7 @@ export class AppComponent implements OnInit {
         const context = this.canvas.nativeElement.getContext("2d").drawImage(this.video.nativeElement, 0, 0, 640, 480);
         this.captures.push(this.canvas.nativeElement.toDataURL("image/png"));
         console.log('picture taken');
+        console.log('array.length: ', this.captures.length)
     }
 
 }
