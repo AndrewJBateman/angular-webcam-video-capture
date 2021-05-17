@@ -44,7 +44,7 @@
 
 ## :computer: Code Examples
 
-* Extract from `app.component.ts` showing deprecated `createObjectURL` code and working replacement code.
+* Extract from `app.component.ts` showing code to get video stream.
 
 ```typescript
 
@@ -56,8 +56,6 @@
             });
         }
     }
-
-
 ```
 
 ## :cool: Features
