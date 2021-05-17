@@ -61,11 +61,10 @@
 ## :cool: Features
 
 * Works with [Google Chrome Version 86 Official Build 64 bits](https://www.google.com/chrome/).
-* App updated to latest Angular v11 with no dependency conflicts.
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working.
+* Status: Working. Updated may 2021.
 * To-Do: add an improved UI. Add database connection to store captured photos.
 
 ## :clap: Inspiration
