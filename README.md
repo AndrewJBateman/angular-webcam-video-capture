@@ -1,8 +1,14 @@
 # :zap: Angular Webcam Video Capture
 
-* Displays webcam video stream and captures images from local PC web browser. Photos can be captured using a button that will save the images in an array. Works in Chrome only.
+* Displays webcam video stream and captures images from local PC web browser.
+* Photos can be captured using a button that will save the images in an array.
+* Works in Chrome only.
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-*** Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-webcam-video-capture?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-webcam-video-capture?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-webcam-video-capture?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-webcam-video-capture?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -27,11 +33,10 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v11](https://angular.io/)
-* [Angular CLI v11](https://cli.angular.io/).
+* [Angular v12](https://angular.io/)
 * [Angular ElementRefs](https://angular.io/api/core/ElementRef#description) used as a wrapper inside of a View. Security issues with this method and it means service workers cannot be used. Better to use templating and databinding or use Renderer2.
 * [Angular ViewChild](https://angular.io/api/core/ViewChild) decorator used to configure a view query.
-* [navigator.mediaDevices.getUserMedia()](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) method used to prompts the user for permission to use a media input which produces a MediaStream. It returns a Promise that resolves to a MediaStream object (assuming permission is given). A catch function was added to alert the user to any errors.
+* [navigator.mediaDevices.getUserMedia()](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) method used to prompt the user for permission to use a media input which produces a MediaStream. It returns a Promise that resolves to a MediaStream object (assuming permission is given). A catch function was added to alert the user to any errors.
 
 ## :floppy_disk: Setup
 
@@ -70,6 +75,10 @@
 * [Nic Raboy of X-Team blog: CAPTURE WEBCAM IMAGES FROM A BROWSER WITH ANGULAR](https://x-team.com/blog/webcam-image-capture-angular/)]
 * [Matt McAlister: Get You Some Media With getUserMedia()](https://medium.com/@matt.mcalister93/get-you-some-media-with-getusermedia-726cde161cd7)
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
