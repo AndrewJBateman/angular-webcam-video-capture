@@ -18,7 +18,6 @@
   * [:camera: Screenshots](#camera-screenshots)
   * [:signal_strength: Technologies](#signal_strength-technologies)
   * [:floppy_disk: Setup](#floppy_disk-setup)
-  * [:wrench: Testing](#wrench-testing)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
   * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
@@ -38,13 +37,14 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v13](https://angular.io/)
+* [Angular v14](https://angular.io/)
 * [Angular ElementRefs](https://angular.io/api/core/ElementRef#description) used as a wrapper inside of a View. Security issues with this method and it means service workers cannot be used. Better to use templating and databinding or use Renderer2.
 * [Angular ViewChild](https://angular.io/api/core/ViewChild) decorator used to configure a view query.
 * [navigator.mediaDevices.getUserMedia()](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia) method used to prompt the user for permission to use a media input which produces a MediaStream. It returns a Promise that resolves to a MediaStream object (assuming permission is given). A catch function was added to alert the user to any errors.
 
 ## :floppy_disk: Setup
 
+* `npm i` to install dependencies
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## :computer: Code Examples
@@ -70,7 +70,7 @@
 ## :clipboard: Status & To-Do List
 
 * Status: Working.
-* To-Do: add an improved UI. Add database connection to store captured photos.
+* To-Do: Add an improved UI. Add database connection to store captured photos.
 
 ## :clap: Inspiration
 
